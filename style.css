@@ -1,3 +1,8 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 body {
   background-color: black;
   font-family: "Poppins", Arial, sans-serif;
@@ -7,6 +12,13 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* position: ; */
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
 }
 .narbar_title {
   font-weight: 600;
@@ -31,7 +43,7 @@ nav {
 .navbar_links ul li a::after {
   content: "";
   position: absolute;
-  background-color: aqua;
+  background-color: palevioletred;
   height: 3px;
   width: 0;
   left: 0;
@@ -42,7 +54,7 @@ nav {
   width: 100%;
 }
 .active {
-  color: aqua;
+  color: palevioletred;
 }
 
 .home {
@@ -55,14 +67,14 @@ nav {
   width: 30%;
 }
 .home_word p {
-  color: aqua;
+  color: palevioletred;
 }
 .home_word h1 {
   font-size: 65px;
   /* width: 50%; */
 }
 .home_word h1 span {
-  color: aqua;
+  color: palevioletred;
 }
 .home_picture {
   width: 35%;
@@ -115,13 +127,13 @@ nav {
   font-size: 18px;
 }
 .about_project span {
-  color: aqua;
+  color: palevioletred;
 }
 .about button {
   font-size: 12px;
   padding: 15px 25px;
   border-radius: 30px;
-  background-color: aqua;
+  background-color: palevioletred;
 }
 
 .resume {
@@ -163,8 +175,83 @@ nav {
   font-weight: 200;
 }
 .year {
-  color: aqua;
+  color: palevioletred;
 }
 .card_description {
   color: #ffffff95;
+}
+
+#skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 30px;
+}
+#skill h2 {
+  font-size: 45px;
+}
+.skill_decription {
+  color: #ffffff95;
+}
+.skill-container {
+  width: 80%;
+  max-width: 600px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: palevioletred;
+  border-radius: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 100px 0;
+}
+.contact h2 {
+  font-size: 45px;
+}
+.contact_description {
+  width: 45%;
+  text-align: center;
+  color: #ffffff95;
+}
+.contact_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.address_cards {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.address_cards img {
+  padding: 25px;
+  width: 50px;
+  background-color: #2e2e2e;
+  border-radius: 50px;
 }
